@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artificial_C - Hobbyist Artist</title>
-    <style>
-        /* Your CSS styles here */
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -27,8 +25,10 @@
     <section id="paintings">
         <h2>Paintings</h2>
         <div class="artwork">
-            <!-- Interactive gallery with zooming and lightbox functionality -->
-            <!-- Add your painting images here -->
+            <!-- Clickable images of your paintings with IDs -->
+            <img src="painting1.jpg" alt="Painting 1" id="painting1" class="painting">
+            <img src="painting2.jpg" alt="Painting 2" id="painting2" class="painting">
+            <!-- Add more images as needed -->
         </div>
     </section>
     <section id="drawings">
@@ -49,13 +49,20 @@
         <h2>Contact</h2>
         <p>Get in touch with me for commissions, collaborations, or just to say hello!</p>
         <!-- Contact form or contact information will be added here -->
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </section>
     <footer>
         <p>© 2024 Artificial_C. All rights reserved.</p>
     </footer>
 
-    <script>
-        // JavaScript for gallery functionality and other interactive features will be added here
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
