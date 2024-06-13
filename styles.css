@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #2e8b57; /* Forest Green */
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+nav {
+    background-color: #c0c0c0; /* Silver */
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+}
+section {
+    padding: 20px;
+}
+.artwork {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+footer {
+    background-color: #2e8b57; /* Forest Green */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin-top: 10px;
+}
+form input, form textarea, form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+form button {
+    background-color: #2e8b57; /* Forest Green */
+    color: white;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #246c42; /* Darker green */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    nav {
+        display: block;
+    }
+    nav a {
+        display: block;
+        padding: 10px 0;
+    }
+}
